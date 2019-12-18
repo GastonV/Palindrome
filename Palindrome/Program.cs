@@ -7,12 +7,12 @@ namespace Palindrome
         static void Main(string[] args)
         {
             var item = new Program();
-            Console.WriteLine(item.checkPalind("state"));
-            Console.WriteLine(item.checkPalind("animal"));
-            Console.WriteLine(item.checkPalind("tirrit"));
-            Console.WriteLine(item.checkPalind("lamina"));
-            Console.WriteLine(item.checkPalind("etats"));
-            Console.WriteLine(item.checkPalind("a"));
+            String[] arr_palindrom = { "state", "animal", "tirrit", "etats", "a" };
+
+            foreach (var pali in arr_palindrom)
+            {
+                Console.WriteLine(item.checkPalind(pali));
+            }
             Console.ReadLine();
 
         }
